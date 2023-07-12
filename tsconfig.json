@@ -19,7 +19,7 @@
     "types": ["node", "vite/client"],
     "outDir": "build",
     "paths": {
-      "@comcal/*": ["src/*"]
+      "@ProjectXYZ/*": ["src/*"]
     }
   },
   "include": ["src", "**/*.ts"],
