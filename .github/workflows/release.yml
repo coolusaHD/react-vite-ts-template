@@ -40,12 +40,10 @@ jobs:
           writeToFile: false
 
       - name: 📦 Create Release
-        uses: actions/create-release@v1
+        uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.semver.outputs.next }}
-          release_name: ${{ steps.semver.outputs.next }}
+          tag: ${{ steps.semver.outputs.next }}
+          name: ${{ steps.semver.outputs.next }}
           body: ${{ steps.changelog.outputs.changes }}
-          draft: false
-          prerelease: false
