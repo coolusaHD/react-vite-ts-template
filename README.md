@@ -74,6 +74,22 @@ To start using this template, follow these steps:
 - `npm run prettier-check` - Checks the source code for Prettier formatting.
 - `npm run prettier-write` - Formats the source code using Prettier.
 
+## GitHub Workflows 💡
+
+### CI (`ci.yml`) 🏗️
+This CI (Continuous Integration) YAML file is used to automate the testing and validation process for a Node.js project. It sets up different workflows and jobs to ensure code quality and detect any issues before merging changes into the main branch.
+
+### Deploy Infrastructure 🚀
+This YAML file is used for automating the deployment of a frontend application to a production environment using FTP (File Transfer Protocol). 
+Before using this deployment YAML file, you need the following prerequisites svaed as secrets:
+- FTP server address (`FTP_SERVER_ADRESS`)
+- FTP username (`FTP_USERNAME`)
+- FTP password (`FTP_PASSWORD`)
+
+### Publish Release 📦
+This YAML file is used for automating the process of publishing a new release for a GitHub repository.
+You need to commit with **conventional commits** (See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)) and need a existing release.
+
 ## License 🧾
 
 This project is licensed under the [MIT License](LICENSE).
