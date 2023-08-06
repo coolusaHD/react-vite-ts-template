@@ -77,16 +77,16 @@ To start using this template, follow these steps:
 ## GitHub Workflows 💡
 
 ### CI (`ci.yml`) 🏗️
-This CI (Continuous Integration) YAML file is used to automate the testing and validation process for a Node.js project. It sets up different workflows and jobs to ensure code quality and detect any issues before merging changes into the main branch.
+This CI (Continuous Integration) YAML file is used to automate the testing and validation process for a Node.js project. It sets up different workflows and jobs to ensure code quality and detect any issues before merging changes into the main branch. You can set the jobs to be required to prevent merging unfinished branches.
 
-### Deploy Infrastructure 🚀
+### Deploy Infrastructure (`deploy.yml`) 🚀
 This YAML file is used for automating the deployment of a frontend application to a production environment using FTP (File Transfer Protocol). 
 Before using this deployment YAML file, you need the following prerequisites svaed as secrets:
 - FTP server address (`FTP_SERVER_ADRESS`)
 - FTP username (`FTP_USERNAME`)
 - FTP password (`FTP_PASSWORD`)
 
-### Publish Release 📦
+### Publish Release (`release.yml`) 📦
 This YAML file is used for automating the process of publishing a new release for a GitHub repository.
 You need to commit with **conventional commits** (See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)) and need a existing release.
 
