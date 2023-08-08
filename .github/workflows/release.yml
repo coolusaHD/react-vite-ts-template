@@ -21,6 +21,7 @@ jobs:
         with:
           token: ${{ github.token }}
           branch: main
+          patchList: fix, bugfix, perf, refactor, test, test, chore
 
       - name: 🔖 Set tag to latest commit
         uses: rickstaa/action-create-tag@v1
