@@ -24,7 +24,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
     "@mui/system": "^5.14.3",
-    "@mui/x-date-pickers": "^6.11.0",
+    "@mui/x-date-pickers": "^6.11.1",
     "cross-env": "^7.0.3",
     "date-fns": "^2.30.0",
     "react": "^18.2.0",
