@@ -13,3 +13,7 @@ updates:
     schedule:
       interval: 'weekly'
       time: '00:00'
+    groups:
+      template:
+        patterns:
+          - '*'
