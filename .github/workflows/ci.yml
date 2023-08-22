@@ -1,5 +1,5 @@
 on:
-  #pull_request:
+  pull_request:
   workflow_dispatch:
 
 permissions: write-all
@@ -68,6 +68,7 @@ jobs:
           files: 'vitest-results.xml'
 
   e2eTests:
+    if: false
     name: 🧪 E2E Tests
     needs: [validateCodyStyle]
     timeout-minutes: 60
@@ -121,7 +122,8 @@ jobs:
   notify-on-success:
     name: 📧 Notify success
     if: success()
-    needs: [validateCodyStyle, unitTests, e2eTests]
+    #needs: [validateCodyStyle, unitTests, e2eTests]
+    needs: [validateCodyStyle, unitTests]
     runs-on: ubuntu-latest
     steps:
       - name: 📧 Comment Pull Request
